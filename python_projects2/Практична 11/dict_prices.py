@@ -4,7 +4,7 @@ prices = {"banana": 50.00,
           "beer": 80.00,
           }
 for товари, ціни in prices.items():
-    print(товари, ціни, end="грн. ")
+    print(товари, ціни,"грн")
 
 print()
 prices.update({"orange": 40.00})

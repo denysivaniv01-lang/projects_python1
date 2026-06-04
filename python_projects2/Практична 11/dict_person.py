@@ -4,10 +4,12 @@ person = {"name": "Denis",
           "hobby": "Programming"}
 print(person)
 person.update({"email": "denys.v.ivaniv@ukd.edu.ua"})
+print()
 
 print("="* 95)
 print(f"Дадаєм в кінці @email {person}")
 person.update({"age": 17})
+print()
 
 print(f"Обновлення року{person}")
 print("="* 95)
@@ -18,5 +20,6 @@ print(f"Видалення елемента hobby{person}")
 print("="* 95)
 
 print(f"виводим ключі{person.keys()}")
+print()
 print(f"виводим значення{person.values()}")
 # ключ це свого роду індекс по якому ми можем звертатисся напряму до даних в ньому,а значення Це сама інформація, яку ми збергіаєм.
