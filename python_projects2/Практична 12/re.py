@@ -1,3 +1,4 @@
+
 def pop():
     print("Hi")
     print("Hi")
@@ -13,3 +14,5 @@ total = sum_numbers(5, 10)
 print(total)  # Виведе 15
 
 pop()
+
+print(total)  # Виведе 15
