@@ -3,7 +3,6 @@ grades_list = []
 def add_grade():
     user_input = input("Введіть оцінку (від 1 до 12): ")
     
-    # Перевіряємо, чи користувач ввів саме число, а не літери
     if user_input.isdigit():
         grade = int(user_input)
         if 1 <= grade <= 12:
@@ -21,7 +20,7 @@ def show_grades(lst):
 
 def show_average(lst):
     avg = sum(lst) / len(lst)
-    print(f"Середній бал: {avg:.2f}")  # Округлюємо до 2 знаків після коми
+    print(f"Середній бал: {avg:.2f}")
 
 def show_max(lst):
     print(f"Найвища оцінка: {max(lst)}")

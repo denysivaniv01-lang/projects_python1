@@ -35,7 +35,6 @@ def validate_password():
         print("Пароль слабкий: не містить велику літеру")
         return
 
-    # Якщо ми дійшли сюди, значить жоден return не спрацював
     print("Пароль надійний")
 
 validate_password()
