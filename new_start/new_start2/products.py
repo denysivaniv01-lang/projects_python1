@@ -4,8 +4,9 @@ def add_item(name, price):
     print(f"Додавання {name} та {price}грн до списку")
     lis.append((name,price))
 def total_price():
-    total = sum(price for name, price in lis)
-    print("загальна сума разам{total}грн")
+   total = sum(item[1] for item in lis)
+   print(f"Загальна сума:{total}")
+   return total
 def show_items():
    if not lis:
       print("Ваш список пустий")
@@ -20,17 +21,18 @@ while True:
    print("4.Вийти")
    user = int(input("Введіть число:"))
    if user == 1:
-    towar_name = str(input("Введіть товар який ви хочете:")).capitalize()
+    towar_name = input("Введіть товар який ви хочете:").capitalize().strip()
     towar_price = int(input("Введіть ціну товару:"))
-    add_item(towar_name, towar_price)
-
+    add_item(towar_name,towar_price)
    elif user == 2:
-    total_price()
+      total_price()
    elif user == 3:
       show_items()
    elif user == 4:
       print("Ви вийшли з програми")
       break
+   else:
+      print("Ви не ввели число")
 
     
 
