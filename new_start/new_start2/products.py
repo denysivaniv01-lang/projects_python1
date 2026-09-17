@@ -8,7 +8,7 @@ def total_price():
    print(f"Загальна сума:{total}")
    return total
 def show_items():
-   if not lis:
+   if lis == []:
       print("Ваш список пустий")
    else:
        for name,price in lis:
