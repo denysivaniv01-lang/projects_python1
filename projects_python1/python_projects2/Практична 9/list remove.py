@@ -1,0 +1,38 @@
+<<<<<<< HEAD
+code = ["a", "b", "c", "d", "e","b"]
+print(code)
+code.remove("b")
+print(f"видалення першого b {code}")
+code.pop()
+print(f"видалення останнього елемента: {code}")
+code.append("b")
+print(code)
+code2 = code.copy()
+print(f"Копія списку: {code2}")
+code2.pop()
+print(f"Видалено елемент: {code2} (Видалений b)")
+code2.remove("a")
+print(f"Видалено елемент: {code2} (Видалений a)")
+print("\n")
+code2.clear()
+print(f"Очистка списку: {code2}")
+
+=======
+code = ["a", "b", "c", "d", "e","b"]
+print(code)
+code.remove("b")
+print(f"видалення першого b{code}")
+code.pop()
+print(f"видалення останнього елемента: {code}")
+code.append("b")
+print(code)
+code2 = code.copy()
+print(f"Копія списку: {code2}")
+code2.pop()
+print(f"Видалено елемент: {code2} (Видалений b)")
+code2.remove("a")
+print(f"Видалено елемент: {code2} (Видалений a)")
+print("\n")
+code2.clear()
+print(f"Очистка списку: {code2}")
+>>>>>>> b13a8fbef3ff269eace11adb4b8db262612244a7
