@@ -1,12 +1,14 @@
-stuck = []
+stack = []
 
+def push(stack,add):
+    stack.append(add)
 
-stuck.push("A")
-stuck.push("B")
-stuck.push("C")
-
-print(stuck)
-last = stuck.pop()
-res = stuck.pop
-print(f"результат цього(видалення):{last}")
-print(f"результат цього:{res}")
+push(stack,67)
+push(stack,69)
+push(stack,1488)
+print(f"Додано елементів:{stack}")
+stack.pop()
+print(f"видалено елементів:{stack}")
+def peek(stack,num):
+    return stack[num]
+print(f"Перший елемнт:{peek(stack,0)}")
